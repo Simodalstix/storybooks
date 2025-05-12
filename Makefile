@@ -28,3 +28,18 @@ terraform-init:
 	cd terraform && \
 	terraform workspace select $(ENV) && \
 	terraform init
+
+terraform-plan:
+	cd terraform && \
+	terraform workspace select $(ENV) && \
+	terraform plan \
+	-var-file="./environments/common.tfvars" \
+	-var-file="./environments/$(ENV)/config.tfvars"
+
+TF_ACTION?=plan
+terraform-action:
+	cd terraform && \
+	terraform workspace select $(ENV) && \
+	terraform $(TF_ACTION) \
+	-var-file="./environments/common.tfvars" \
+	-var-file="./environments/$(ENV)/config.tfvars"
