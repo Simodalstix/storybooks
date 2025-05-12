@@ -1,0 +1,28 @@
+# Node modules and logs
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# dotenv files (for safety)
+.env
+.env.*
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode
+.idea
+
+# Git
+.git
+.gitignore
+
+# Optional build cache or coverage
+dist
+coverage
+
+#Google cloud
+*key.json

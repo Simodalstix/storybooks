@@ -1,0 +1,6 @@
+provider "cloudflare" {
+  api_token = var.cloudflare_api_token
+}
+
+# resource "cloudflare_zone" ...
+# resource "cloudflare_dns_record" ...
