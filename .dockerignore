@@ -26,3 +26,14 @@ coverage
 
 #Google cloud
 *key.json
+
+# Terraform
+
+terraform
+*.tf
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.backup
+*.log
+/terraform

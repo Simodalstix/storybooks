@@ -58,3 +58,10 @@ resource "google_compute_instance" "instance" {
     scopes = ["storage-ro"]
   }
 }
+
+resource "google_artifact_registry_repository" "storybook_repo" {
+  location      = "australia-southeast1"
+  repository_id = "storybooks"
+  format        = "DOCKER"
+  description   = "Docker repo for Storybooks app"
+}
